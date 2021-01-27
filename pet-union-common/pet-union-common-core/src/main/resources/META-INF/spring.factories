@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.bysk.common.core.config.JacksonConfig,\
+com.bysk.common.core.config.MessageSourceConfig,\
+com.bysk.common.core.config.RestTemplateConfig,\
+com.bysk.common.core.util.SpringContextHolder,\
+com.bysk.common.core.exception.GlobalExceptionHandler

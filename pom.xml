@@ -13,6 +13,8 @@
     <modules>
         <module>pet-union-gateway</module>
         <module>pet-union-auth</module>
+        <module>pet-union-sys</module>
+        <module>pet-union-common</module>
     </modules>
 
     <properties>
@@ -40,7 +42,7 @@
         <mysql.connector.version>8.0.19</mysql.connector.version>
         <knife4j.version>2.0.2</knife4j.version>
         <kaptcha.version>1.6.2</kaptcha.version>
-        <bysk.version>1.0-SNAPSHOT</bysk.version>
+        <pet-union.version>1.0.0-SNAPSHOT</pet-union.version>
         <aliyun-sdk-oss.version>3.5.0</aliyun-sdk-oss.version>
     </properties>
 
@@ -129,7 +131,7 @@
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${spring-boot.version}</version>
                 <exclusions>
-                    <!--排除tomcat依赖-->
+                    <!--排除tomcat依赖, 在具体的微服务中用 undertow替代-->
                     <exclusion>
                         <artifactId>spring-boot-starter-tomcat</artifactId>
                         <groupId>org.springframework.boot</groupId>
@@ -247,6 +249,13 @@
                 <groupId>com.aliyun.oss</groupId>
                 <artifactId>aliyun-sdk-oss</artifactId>
                 <version>${aliyun-sdk-oss.version}</version>
+            </dependency>
+
+            <!-- 系统公共模块 -->
+            <dependency>
+                <groupId>com.leo</groupId>
+                <artifactId>pet-union-common-core</artifactId>
+                <version>${pet-union.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
