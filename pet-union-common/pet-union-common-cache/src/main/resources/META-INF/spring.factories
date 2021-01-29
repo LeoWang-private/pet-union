@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.leo.common.cache.config.RedissonConfiguration,\
+com.leo.common.cache.config.RedisTemplateConfig

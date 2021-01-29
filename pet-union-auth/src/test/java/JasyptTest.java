@@ -12,15 +12,16 @@ import org.junit.Test;
  * @since ：2021-01-26 14:19
  */
 public class JasyptTest {
-    @Test
-    public void jasyptEncode(){
 
-        BasicTextEncryptor encryptor = new BasicTextEncryptor();
-        encryptor.setPassword("bysk");
-        String username = encryptor.encrypt("root");
-        String password = encryptor.encrypt("123456");
-        System.out.println("username---->" + username);
-        System.out.println("password---->" + password);
-    }
+	@Test
+	public void jasyptEncode() {
+
+		BasicTextEncryptor encryptor = new BasicTextEncryptor();
+		encryptor.setPassword("bysk");
+		String username = encryptor.encrypt("root");
+		String password = encryptor.encrypt("123456");
+		System.out.println("username---->" + username);
+		System.out.println("password---->" + password);
+	}
 
 }

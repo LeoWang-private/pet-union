@@ -12,43 +12,45 @@ import lombok.Setter;
  * @since ：2021-01-27 14:23
  */
 public enum ResultEnum {
-    /**
-     * 操作成功： 2XX系列
-     */
-    SUCCESS(200, "success"),
 
-    /**
-     * 操作失败
-     */
-    FAIL(1, "fail"),
+	/**
+	 * 操作成功： 2XX系列
+	 */
+	SUCCESS(200, "success"),
 
-    ;
+	/**
+	 * 操作失败
+	 */
+	FAIL(1, "fail"),
 
-    /***
-     * 状态码
-     */
-    @Getter
-    @Setter
-    private int code;
+	;
 
-    /***
-     * 状态码标识符
-     */
-    @Getter
-    @Setter
-    private String msg;
+	/***
+	 * 状态码
+	 */
+	@Getter
+	@Setter
+	private int code;
 
-    ResultEnum(int code, String msg) {
-        this.code = code;
-        this.msg = msg;
-    }
+	/***
+	 * 状态码标识符
+	 */
+	@Getter
+	@Setter
+	private String msg;
 
-    public static ResultEnum valueOf(int code) {
-        for (ResultEnum resultEnum : ResultEnum.values()) {
-            if (resultEnum.getCode() == code) {
-                return resultEnum;
-            }
-        }
-        return FAIL;
-    }
+	ResultEnum(int code, String msg) {
+		this.code = code;
+		this.msg = msg;
+	}
+
+	public static ResultEnum valueOf(int code) {
+		for (ResultEnum resultEnum : ResultEnum.values()) {
+			if (resultEnum.getCode() == code) {
+				return resultEnum;
+			}
+		}
+		return FAIL;
+	}
+
 }

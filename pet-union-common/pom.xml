@@ -15,6 +15,7 @@
     <modules>
         <module>pet-union-common-sentinel</module>
         <module>pet-union-common-core</module>
+        <module>pet-union-common-cache</module>
     </modules>
 
 

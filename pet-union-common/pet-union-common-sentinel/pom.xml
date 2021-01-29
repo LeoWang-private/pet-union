@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>pet-union-common-sentinel</artifactId>
+    <packaging>jar</packaging>
     <description>服务降级、熔断和限流通用组件</description>
 
     <dependencies>

@@ -59,6 +59,11 @@
             <groupId>me.zhyd.oauth</groupId>
             <artifactId>JustAuth</artifactId>
         </dependency>
+        <!-- 平台公共模块 -->
+        <dependency>
+            <groupId>com.leo</groupId>
+            <artifactId>pet-union-common-sentinel</artifactId>
+        </dependency>
 
     </dependencies>
 

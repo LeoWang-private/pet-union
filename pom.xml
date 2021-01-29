@@ -257,6 +257,11 @@
                 <artifactId>pet-union-common-core</artifactId>
                 <version>${pet-union.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.leo</groupId>
+                <artifactId>pet-union-common-sentinel</artifactId>
+                <version>${pet-union.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

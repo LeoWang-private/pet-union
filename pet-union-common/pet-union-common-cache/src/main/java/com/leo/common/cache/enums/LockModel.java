@@ -1,0 +1,40 @@
+package com.leo.common.cache.enums;
+
+/**
+ * <p>
+ * 锁的模式枚举类
+ * </p>
+ *
+ * @author ：Leo
+ * @since ：2021-01-29 14:42
+ */
+public enum LockModel {
+    /**
+     * 可重入锁
+     */
+    REENTRANT,
+    /**
+     * 公平锁
+     */
+    FAIR,
+    /**
+     * 联锁
+     */
+    MULTIPLE,
+    /**
+     * 红锁
+     */
+    RED_LOCK,
+    /**
+     * 读锁
+     */
+    READ,
+    /**
+     * 写锁
+     */
+    WRITE,
+    /**
+     * 自动模式,当参数只有一个.使用 REENTRANT 参数多个 RED_LOCK
+     */
+    AUTO
+}
